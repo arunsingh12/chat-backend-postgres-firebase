@@ -1,0 +1,106 @@
+# ───────────────────────────────────────────────
+# Hidden files & folders
+# Anything starting with "." is local tooling (editor, IDE, assistant,
+# cache…) unless it is one of the shared project configs listed below.
+# ───────────────────────────────────────────────
+.*
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.nvmrc
+!.prettierrc
+!.prettierignore
+!.env.example
+!.env.*.example
+!.github/
+!.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ───────────────────────────────────────────────
+# Dependencies
+# ───────────────────────────────────────────────
+node_modules/
+bower_components/
+jspm_packages/
+
+# ───────────────────────────────────────────────
+# Build output & artifacts
+# ───────────────────────────────────────────────
+dist/
+build/
+out/
+*.tsbuildinfo
+*.zip
+*.tgz
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ───────────────────────────────────────────────
+# Testing & coverage
+# ───────────────────────────────────────────────
+coverage/
+*.lcov
+
+# ───────────────────────────────────────────────
+# Secrets & credentials (never commit these)
+# ───────────────────────────────────────────────
+*.local
+service-account*.json
+*-firebase-adminsdk-*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# ───────────────────────────────────────────────
+# Logs & runtime files
+# ───────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.pid
+*.seed
+*.pid.lock
+
+# ───────────────────────────────────────────────
+# Temporary, backup & merge leftovers
+# ───────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# ───────────────────────────────────────────────
+# Editors & IDEs (non-hidden files)
+# ───────────────────────────────────────────────
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ───────────────────────────────────────────────
+# OS files
+# ───────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+Icon?
